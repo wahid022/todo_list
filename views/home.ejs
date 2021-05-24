@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+    </head>
+
+
+    <body>
+        <!-- main container(grey color) -->
+
+        <div id="container">
+
+            <!-- todo list container -->
+
+            <div id="todo-container">
+
+                <!-- heading section -->
+
+                <div class="inner-div" id="heading-div">
+                    <h2 id="contact-heading"> 
+                        <i class="fas fa-list-ul">   </i>
+                        ToDo List 
+                    </h2>
+                </div>
+                
+                <!-- description section -->
+                <form action="/create-list" method="POST" id="form">
+                    
+                    <div class="inner-div" id="description">
+                        <p class="heading">DESCRIPTION</p>
+
+                        
+                            <input id="description-comment" type="text" name="description" placeholder="What do you need to do ?" required>
+                
+        
+                    </div>
+
+
+                    <!-- category and date section -->
+        
+                    <div class="inner-div" id="category-date">
+                        
+                        <!-- category div -->
+
+                        <div class="category-date-innerdiv" id="category-div">
+                            <p class="heading">CATEGORY</p>
+
+                            
+                                <select id="category-list" class="cate-date-styling"  name="category"> 
+                                    <option class="option" value="">Choose a category </option>
+                                    <option class="option" value="Personal">Personal</option>
+                                    <option class="option" value="Work">Work</option>
+                                    <option class="option" value="School">School</option>
+                                    <option class="option" value="Cleaning">Cleaning</option>
+                                    <option class="option" value="Other">Other</option>
+                                </select>
+                            
+                        </div>
+
+                        <!-- date div -->
+
+                        <div class="category-date-innerdiv" id="date-div">
+                            <p class="heading">DUE DATE</p>
+                            <input type="date" name="date" id="date" class="cate-date-styling">
+                            
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- add task section-->
+
+                    <div class="inner-div" id="add-task">
+                        
+
+                                    <!-- add task buttonn -->
+
+                                    <button type="submit" class="button" id="addtaskButton" >
+                                        <a href="#">
+                                            <i class="fas fa-plus">   </i>
+                                            <span> Add Task </span>
+                                        </a>
+                                    </button>
+                    </div>
+                           
+                </form>
+                                
+
+
+
+
+                        <div>
+                                <ul>
+                                    
+                                    <!-- todolist  -->
+                                    <% for(let i of todolist) { %> 
+                                            <li>
+
+                                                <!-- delete task button -->
+                                                <div class="delete-icon">
+                                                    <a href="/delete-list/?id=<%= i.id%>">
+                                                        <i class="fas fa-trash-alt">   </i>
+                                                    </a>
+                                                </div>
+                                                
+                                                <div class="list-description">
+                                                    <p class="heading"> <%= i.description %> </p>
+                                                </div>
+                                                
+                                                <div class="list-date">
+                                                    <i class="fas fa-calendar-alt"></i>
+                                                    <p> <%= i.date %></p>
+                                                </div>
+
+                                                <div class="list-category">
+                                                    <p> <%= i.category %></p>
+                                                </div>
+                                                
+                                                
+                                            </li>
+            
+                                        
+
+                                     <% } %>
+                        
+                                </ul>  
+                        </div>
+
+                
+                            
+
+
+                            
+                                    
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+#contact-heading
+{
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+}
+
+/* todolist heading */
+#heading-div
+{
+    background-color: #293745;
+}
+body
+{
+    background-color:#021027;
+}
+
+/* main-container */
+#container
+{
+    height: auto;
+    width: 850px;
+    border: 2px solid black;
+    margin-left: 10%;
+    background-color: grey;
+}
+
+/* to-do container */
+#todo-container
+{
+    height: auto;
+    width: 60%;
+    /* border: 2px solid black; */
+    margin: 10px 20% 10px 20%;
+    background-color:#FFFFFF;
+    display: inline-block;
+    box-shadow: 10px 8px 15px black;
+}
+
+/* sections of todo container */
+.inner-div
+{
+    width: 100%;
+    border-top: 2px solid #EAEAEA;
+    height: 60px;
+}
+
+.inner-div:hover
+{
+    background-color: lightgrey;
+}
+
+/* heading of different sections */
+.heading
+{
+    font-size: 10px;
+    color: grey;
+    font-family: sans-serif;
+    margin-top: 5px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+/* heading-section-div */
+#heading-div
+{
+    height: 50px;
+}
+
+/* written so that outline is not visible while focused */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* description-section comment box */
+#description-comment
+{
+    margin-left: 18px;
+    margin-top: -5px;
+    width: 90%;
+    border: none;
+    opacity: 0.5;
+    font-size: 12px;
+    background-color: transparent;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* category-date section */
+.category-date-innerdiv
+{
+    height: 60px;
+    width: 42%;
+    /* border: 2px solid #EAEAEA; */
+    display:inline-block;
+    position: absolute;
+}
+
+
+/* common styling for category and date div */
+.cate-date-styling
+{
+    color: grey;
+    font-family: sans-serif;
+    margin-left: 16px;
+    margin-top: -8px;
+    width: 220px;
+    border: none;
+    background-color: transparent;
+
+}
+
+/* styling for option tag */
+.option
+{
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+
+#date-div
+{
+    margin-left: 250px;
+    border-left: 2px solid #EAEAEA;
+}
+
+/* add -delete task section */
+#add-task
+{
+    height: 100px;
+    display: inline-block; 
+}
+
+/* addtask button */
+.button
+{
+    height:45px;
+    width: 135px;
+    margin-top: 20px;
+    
+    border: none;
+    border-radius: 2px;
+}
+
+/* text in-between the butoon */
+.button span
+{
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+/* for font awesome icons on button */
+.button i
+{
+    font-size: 15px;
+}
+
+
+#addtaskButton
+{
+    
+    background-color: black;
+    margin-left: 180px;
+    
+    
+}
+/* while hovering the addtask button */
+#addtaskButton:hover
+{
+    box-shadow: 0px 8px 15px lightslategrey;
+}
+
+/* todolists styling */
+.inner-div-list
+{
+    width: 100%;
+    border-top: 2px solid #EAEAEA;
+    height: auto;
+}
+
+
+
+ 
+ul{
+    list-style-type:none;
+    margin-left: -40px;
+    
+}
+ul li{
+    width:auto;
+    border-top: 2px solid #EAEAEA;
+    padding-left: 40px;
+    height: 60px;
+    background-color: #293745;
+    
+
+    
+}
+
+ul li:hover
+{
+    background-color:rgb(46, 36, 36);
+    box-shadow: 8px 3px 15px lightslategray;
+    
+}
+
+ul li i{
+    color: white;
+    
+    
+}
+
+ul li i:hover
+{
+    box-shadow: 0px 4px 10px lightslategrey;
+}
+
+
+/* delete icon for todo list */
+.delete-icon
+{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 15px;
+    
+}
+
+.list-description p{
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #F8F7F5;
+}
+
+.list-category
+{
+    margin-left: 350;
+    margin-top: -50px;
+}
+
+.list-category p{
+    margin-left: 25px;
+    height: 25px;
+    /* border: 2px solid black; */
+    width: 60px;
+    background-color: lightsalmon;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.list-date{
+    font-size: 10px;
+    margin-left: 35px;
+}
+
+.list-date p
+{
+    margin-left: 18px;
+    margin-top: -12px;
+    font-size: 13px;
+    font-family: ui-sans-serif;
+    color: #FDCA6E;
+}
+    
